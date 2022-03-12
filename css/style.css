@@ -1,0 +1,288 @@
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ /*header de tous les pages*/
+
+nav div.logo img{
+    height: 50px;
+}
+.logo a, .Link a{
+    color: #fff;
+}
+.Link img{
+    height: 40px;
+}
+nav{
+    background-color: #d35649;
+}
+.logo a:hover, .Link a:hover {
+    color: #98a5a5;
+    transition: 0.2s;
+}
+
+.barreRecherche {
+    background-image: url(Assets/Images/group-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 47vh;
+    background-position: center;
+}
+.barreRecherche h3{
+    text-shadow: 2px 1px 6px #000;
+}
+
+.box-search{
+    width: 48vw;
+    margin:auto;
+    background: rgba(255, 255, 255, 0.623);
+    border-radius: 5px;
+}
+.box-search p{
+    font-weight: 600;
+}
+.box-search input{
+    width: 77%;
+    height: 32px;
+}
+button.boutton-how{
+    border: none;
+    margin-top: 26px;
+    background: rgba(255, 255, 255, 0.438);
+}
+
+/*header de tous les pages*/
+
+/* Page Principal */
+.section1 h3{
+    color: #d35649;
+}
+main .section1 img{
+    height: 60px;
+}
+
+section.section2{
+    background: #d35649;
+
+}
+
+.section2 .img-cercle{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background: url(Assets/Images/group-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.section3 {
+    background:#98a5a5;
+}
+
+.section3 .img-cercle{
+    background: url(Assets/Images/group-4.jpg);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+section.section4 {
+    background:  #509bd7;
+}
+
+.section4 .img-cercle{
+    background: url(Assets/Images/group-3.jpg);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fin page principal*/
+
+/* page About */
+.boiteParent{
+    box-shadow: -3px -2px 7px rgba(0, 0, 0, 0.603);
+}
+.boiteParent .col img{
+    height: 57px;
+}
+.boiteEnfant {
+    padding: 17px;
+    width: 32vw;
+    box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.432);
+}
+.boiteEnfant p, .bold{
+    font-weight: 500;
+}
+.blue{
+    color:  #509bd7;
+    font-weight: bold;
+}
+.part2 .col img{
+    height: 32px;
+}
+
+.title{
+    background: rgba(114, 201, 235, 0.144);
+    border-radius: 4px;
+}
+.titleEspace {
+    letter-spacing: 8px;
+}
+
+.locate img{
+    height: 41px;
+}
+
+/* fin page About */
+
+
+/* page Search */
+.formulaire {
+    background: #98a5a538;
+}
+
+div.formulaire .row .col input {
+    width: 130px;
+}
+
+.top {
+    position: relative;
+    top: 48px;
+    text-shadow: 1px 2px 4px #fff;
+    color: #fff;
+}
+
+.image img{
+    height: 210px;
+    background: #d35649;
+}
+
+/* fin page Search */
+
+
+/* Le pied de page*/
+.footer1{
+    background: black;
+}
+
+.footer1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer1 a:hover {
+    color: #98a5a5;
+    transition: .3s;
+}
+.cercle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.cercle img{
+    height: 70px;
+}
+
+.footer1 a{
+    font-weight: 600;
+}
+.footer1 input{
+    background: inherit;
+    border: 1px solid #444;
+    border-radius: 2px;
+    margin-right: -6px;
+    padding: 5px;
+}
+
+.rouge{
+    color:  #d35649!important;
+}
+
+.footer1 a:hover{
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.footer2{
+    background: #1f1f1f;
+    height: 73px;
+}
+
+.socialIcons i{
+    color: #ccc;  
+}
+.socialIcons i:hover{
+    color:  #509bd7;  
+}
+
+
+
+/* Fin pied de page */
+
+/* Partie responsive */
+
+
+@media (max-width: 700px) {
+    /* partie header*/
+    nav{
+        flex-direction: column;
+        gap: 25.5px;
+    }
+    
+    .disparaît{
+        display: none;
+    }
+    /* page About */
+    .cadre {
+        width: 60vw;
+    }
+    /* page principal */
+    /*les trois box en couleur*/
+    .red p,
+    .gris p,
+    .bleu p{
+        font-weight: 600;
+    }
+.red{
+    background: url(Assets/Images/group-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    background-size: cover;
+}
+.gris{
+    background: url(Assets/Images/group-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    background-size: cover;
+}
+.bleu{
+    background: url(Assets/Images/group-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    background-size: cover;
+}
+/* page about */
+.boiteEnfant {
+    width: 55vw;
+}
+}
+
+
